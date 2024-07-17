@@ -13,8 +13,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <ThemeProvider>
         <Provider store={store}>
           <App />
-        </Provider>,
-      </ThemeProvider>,
-    </BrowserRouter>,
-  </React.StrictMode>,
+        </Provider>
+      </ThemeProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 )
