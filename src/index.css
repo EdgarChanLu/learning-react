@@ -1,3 +1,4 @@
+/* General */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -55,7 +56,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* src/index.css */
+/* Formulario */
 
 form {
   max-width: 400px;
@@ -84,7 +85,8 @@ form div input {
   border-radius: .25em;
 }
 
-/* Optional: adding some styles to the button */
+/* Navbar */
+
 form div button {
   padding: 0.7em;
   color: #fff;
@@ -123,7 +125,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* src/index.css */
+/* Cards */
 
 .container {
   display: flex;

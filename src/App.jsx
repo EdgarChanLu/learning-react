@@ -14,7 +14,6 @@ function AppRoutes() {
         <Route path="/helloworld" element={<HelloWorld />} />
         <Route path="/count" element={<Count />} />
         <Route path="/forms" element={<Forms />} />
-        {/* <Route path="*" element={<App />} /> */}
     </Routes>
     )
 }
