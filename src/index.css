@@ -99,8 +99,6 @@ form div button:hover {
   background-color: #0056b3;
 }
 
-/* src/index.css */
-
 nav {
   background-color: #333;
   padding: 1em;
@@ -123,6 +121,35 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* src/index.css */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #2f2f2f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: rgb(158, 140, 0);
+}
+
+.card-content {
+  margin-top: 10px;
 }
 
 

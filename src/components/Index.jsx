@@ -13,27 +13,56 @@ import UserProfile from './UserProfile'
 import ThemeSwitcher from './ThemeSwitcher'
 import StoreCounter from './StoreCounter'
 import Navbar from './Navbar'
+import CounterWithReducer from './CounterWithReducer'
+import PerformanceComponent from './PerformanceComponent'
+import Card from './Card'
 
 function App() {
   const [count, setCount] = useState(0)
   
   return (
     <>
-      <Navbar/>
-      <HelloWorld />
-      <Greeting name='Edgar' lastName='Avila' />
-      <Greeting name='Juan' />
-      <Count/>
-      <Button/>
-      <Timer/>
-      <Forms/>
-      <UserProvider>
-        <div>
-          <UserProfile/>
-        </div>
-      </UserProvider>
-      <ThemeSwitcher/>
-      <StoreCounter/>
+      <Navbar />
+      <div className="container">
+        <Card title="HelloWorld">
+          <HelloWorld />
+        </Card>
+        <Card title="Greeting">
+          <Greeting name="Edgar" lastName="Avila" />
+        </Card>
+        <Card title="Greeting">
+          <Greeting name="Juan" />
+        </Card>
+        <Card title="Count">
+          <Count />
+        </Card>
+        <Card title="Button">
+          <Button />
+        </Card>
+        <Card title="Timer">
+          <Timer />
+        </Card>
+        <Card title="Forms">
+          <Forms />
+        </Card>
+        <Card title="User Profile">
+          <UserProvider>
+            <UserProfile />
+          </UserProvider>
+        </Card>
+        <Card title="Theme Switcher">
+          <ThemeSwitcher />
+        </Card>
+        <Card title="Store Counter">
+          <StoreCounter />
+        </Card>
+        <Card title="Counter With Reducer">
+          <CounterWithReducer />
+        </Card>
+        <Card title="Performance Component">
+          <PerformanceComponent />
+        </Card>
+      </div>
       
 
       <div>
@@ -45,7 +74,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
+      <div>
         <button onClick={() => setCount((count) => count + 1)}>
           Increment {count}
         </button>
